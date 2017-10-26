@@ -480,7 +480,7 @@ public class re {
       if index >= match.numberOfRanges {
         return nil
       }
-      let nsrange = match.range(at: index)
+      let nsrange = match.rangeAt(index)
       
       if nsrange.location == NSNotFound {
         return string.endIndex..<string.endIndex
